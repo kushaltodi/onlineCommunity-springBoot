@@ -1,0 +1,26 @@
+MySQL
+
+ create database apsitdb;
+ use apsitdb;
+ 
+commit;
+
+Get :
+http://localhost:9999/employee/getAll
+
+
+Post : Add records 
+http://localhost:9999/post/create
+
+  Search ID :
+  GET
+  http://localhost:9999/post/getdetails/1
+ 
+
+Put : Update Record 
+http://localhost:9999/post/update
+Select Body : and raw
+
+Delete : delete
+http://localhost:9999/post/delete/1
+Select Body : and raw

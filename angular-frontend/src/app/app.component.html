@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="posts" routerLinkActive="active" class="nav-link" >Post List</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="create-post" routerLinkActive="active" class="nav-link" >Add Post</a>
+        </li>
+    </ul>
+</nav>
+
+<h1 class="text-center" style="padding: 40px;"> {{title}} </h1>
+<div class = "container">
+    <router-outlet></router-outlet>
+</div>
+
+
+<footer class = "footer">
+    <div class = "container">
+        <span></span>
+    </div>
+</footer>

@@ -1,0 +1,25 @@
+<h2 style="text-align: center;"> Post List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Topic ID</th>
+            <th> Topic name</th>
+            <th> Description </th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <body>
+        <tr *ngFor = "let post of posts" >
+            <td> {{ post.postId }} </td>
+            <td> {{ post.postName }} </td>
+            <td> {{ post.description }} </td>
+            <td>
+                <button (click) = "updatePost(post.postId)" class = "btn btn-info"> Update</button>
+                <button (click) = "deletePost(post.postId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+
+
+    </body>
+</table>
+
